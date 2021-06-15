@@ -1,0 +1,268 @@
+/**
+ * REMEMBER TO UPDATE THE QUERY PARAMETRER for style.css in index.html after updating.
+ */
+
+body {
+  font-family: "Rubik", monospace;
+  color: #9ca9b9;
+  background-color: #0b132b;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #b9c9dc;
+  font-weight: 800;
+}
+
+a,
+a:hover {
+  color: #3e9392;
+  text-decoration: none;
+}
+
+#faq .card {
+  padding: 1rem;
+  background-color: #161d33;
+  border-radius: 0;
+}
+
+#faq-group > a:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+  margin-right: 1rem;
+}
+
+#faq-group > a.collapsed:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+}
+
+#about {
+  background-color: #050819;
+}
+
+#social {
+  padding: 0.25rem;
+  background: rgba(0,0,0,0.1);
+  border-bottom: 1px solid #1c2541;
+}
+
+#social a {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0.5rem;
+  opacity: 0.7;
+  transition: 0.3s;
+  color: #9ca9b9;
+}
+
+#social a:hover {
+  opacity: 1;
+}
+
+#about,
+#donate,
+#press,
+#roadmap,
+#faq {
+  padding: 1rem 0;
+}
+
+#faq-group > a {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  background: #1c2541;
+  color: #b9c9dc;
+}
+
+#faq-group > a i {
+  margin-right: 1rem;
+}
+
+.navbar {
+  color: #b9c9dc;
+  font-weight: 800;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand img {
+  width: 5rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
+#footer {
+  background: rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.footer-text {
+  padding: 1rem 0;
+}
+
+.footer-slogan {
+  margin-top: 1rem;
+}
+
+.btn {
+  color: #000;
+  background-color: #3e9392;
+  border-color: transparent;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:not(:disabled):not(.disabled):active {
+  color: #000;
+  background-color: #3e9392;
+}
+
+.modal-header,
+.modal-content,
+.modal-footer {
+  border: none;
+}
+
+.modal-content {
+  background-color: #1c2541;
+}
+
+#donate-copy * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#donate-copy a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
+
+#dontate-copy:active {
+  color: #fff;
+}
+
+/**
+ * Press
+ */
+.press-post {
+  border-bottom: 1px solid #1c2541;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.press-post p {
+  text-align: justify;
+}
+
+.press-post p a {
+  font-weight: bold;
+  border-bottom: 1px dotted #326f6e;
+}
+
+.press-post a {
+  transition: all 0.3s;
+}
+
+.press-post a:hover {
+  color: #64d4d2;
+}
+
+.press-date {
+  color: #b9c9dc;
+}
+
+/**
+ * Roadmap.
+ */
+.roadmap {
+  list-style: none;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.roadmap:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #343a4e;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.roadmap > li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.roadmap > li:before,
+.roadmap > li:after {
+  content: " ";
+  display: table;
+}
+
+.roadmap > li:after {
+  clear: both;
+}
+
+.roadmap > li > .roadmap-panel {
+  padding: 1rem;
+  position: relative;
+  background: #1c2541;
+}
+
+.roadmap > li > .roadmap-panel p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  #about {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  #about,
+  #faq {
+    padding: 3rem 0;
+  }
+
+  .roadmap > li.roadmap-inverted > .roadmap-panel {
+    float: right;
+  }
+
+  .roadmap > li > .roadmap-panel {
+    width: 47%;
+    float: left;
+  }
+
+  .roadmap > li > .roadmap-dot {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -10px;
+    background-color: #3d4663;
+    border-radius: 50%;
+  }
+
+  .roadmap > li > .roadmap-dot.done {
+    background-color: #3e9392;
+  }
+}

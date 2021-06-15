@@ -1,0 +1,22 @@
+/**
+ *
+ */
+
+$(function() {
+
+  //https://api.pancakeswap.info/api/v2/tokens/0xfd78aaed1e3f2d06dbde9510c6dc14112eca896d
+
+  $('#donate-copy').click(function(e) {
+    to_clipboard('#donate-copy a');
+    $('#donate-copied').hide().text('copied').fadeIn();
+  });
+
+  function to_clipboard(element) {
+    var temp = $('<input>');
+    $('body').append(temp);
+    temp.val($(element).text()).select();
+    document.execCommand('copy');
+    temp.remove();
+  }
+
+});
